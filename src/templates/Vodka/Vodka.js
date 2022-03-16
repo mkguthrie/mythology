@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout/Layout";
 import { isEmpty } from 'lodash';
 import HeroSection from "../../components/ParentSpiritPage/HeroSection/HeroSection";
-import { Wrapper, Intro} from "./Vodka.styles";
+import { Wrapper} from "./Vodka.styles";
 
 const VodkaPage = ( props ) => {
 
