@@ -12,7 +12,7 @@ module.exports = {
   {
     resolve: 'gatsby-source-wordpress',
     options: {
-      "url": process.env.WPGRAPHQL_URL,
+      "url": "http://test.mythologydistillery.com/graphql",
     }
   }, 
   "gatsby-plugin-styled-components", 
