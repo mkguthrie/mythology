@@ -2,11 +2,11 @@ import React from "react"
 import { Hero, Intro } from "./HeroSection.styles"
 import { StaticImage } from "gatsby-plugin-image"
 
-const HeroSection = ({ page }) => {
+const HeroSection = ({ data }) => {
 
-    const backgroundImg = page.ACF_parentSpiritPageFields.heroSection.background.localFile.publicURL;
-    const pageHeading = page.ACF_parentSpiritPageFields.heroSection.heading
-    const intro = page.ACF_parentSpiritPageFields.heroSection.introText
+    const backgroundImg = data.ACF_parentSpiritPageFields.heroSection.background.localFile.publicURL;
+    const pageHeading = data.ACF_parentSpiritPageFields.heroSection.heading
+    const intro = data.ACF_parentSpiritPageFields.heroSection.introText
 
     return (
         <>

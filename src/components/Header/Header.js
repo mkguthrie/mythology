@@ -8,6 +8,8 @@ import { Wrapper } from "./Header.styles";
 const Header = () => {
     const { menu } = useMenuQuery()
 
+    // console.log(menu)
+
     return (
         <Wrapper>
             <Navigation menu={menu.menuItems.nodes} />
