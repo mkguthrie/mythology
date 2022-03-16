@@ -33,3 +33,41 @@ export const Hero = styled.div`
     }
   }
 `;
+
+export const Intro = styled.div`
+  background-color: rgb(233, 237, 218);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    @media screen and (min-width: 768px) {
+        min-height: 150px;
+        align-items: flex-start;
+    }
+
+  .introOuter {
+    background-color: rgb(233, 237, 218);
+    
+    padding: 10px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        width: 700px;
+        margin-top: -80px;
+    }
+
+    .introInner {
+        border: 2px solid #a7873a;
+        padding: 1em;
+        line-height: 1.5;
+
+        @media screen and (min-width: 768px) {
+            padding: 2.5em 2.5em 0;
+            border-bottom: 0;
+        }
+
+        
+    }
+  }
+`

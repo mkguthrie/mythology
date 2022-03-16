@@ -16,6 +16,7 @@ query GET_GIN_PAGE {
 				publicURL
 			  }
 			}
+			introText
 		  }
 		}
 	  }

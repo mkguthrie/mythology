@@ -1,3 +1,8 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
+
 module.exports = {
   siteMetadata: {
     title: ``,
@@ -7,7 +12,7 @@ module.exports = {
   {
     resolve: 'gatsby-source-wordpress',
     options: {
-      "url": "http://test.mythologydistillery.com/graphql",
+      "url": process.env.WPGRAPHQL_URL,
     }
   }, 
   "gatsby-plugin-styled-components", 

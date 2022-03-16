@@ -16,6 +16,7 @@ query GET_VODKA_PAGE {
 				publicURL
 			  }
 			}
+			introText
 		  }
 		}
 	  }

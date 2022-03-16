@@ -16,6 +16,7 @@ query GET_WHISKEY_PAGE {
 				publicURL
 			  }
 			}
+			introText
 		  }
 		}
 	  }
