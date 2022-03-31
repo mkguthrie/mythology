@@ -5,7 +5,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: ``,
+    title: `Mythology Distellery`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: [

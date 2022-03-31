@@ -16,7 +16,7 @@ const HomePage = ( props ) => {
 	const logoDark = getImage(page.ACF_homePageFields.hero.darkLogo.localFile);
 	const logoLight = getImage(page.ACF_homePageFields.hero.lightLogo.localFile);
 
-          console.log(page);
+        //   console.log(page);
 	return (
 		<Layout>
 			{

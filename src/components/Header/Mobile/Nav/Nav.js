@@ -1,27 +1,26 @@
 import { Link } from "gatsby"
 import React from "react"
-import { Wrapper } from "./Navigation.styles"
+import { Wrapper } from "./Nav.styles"
 
 
 
-const Navigation = ({ menu }) => {
+const Nav = ({ menu }) => {
 
     // console.log(menu)
     return (
         <Wrapper>
             <ul>
-                <Link to="/"><li>Home</li></Link>
             {menu.map(mainItem =>
                 !mainItem.parentId ? (
-                <li key={mainItem.id}>
+                <li key={mainItem.id} className="nav-item">
                     <Link to={mainItem.url} activeClassName="nav-active">
                     {mainItem.label}
-                    {mainItem.childItems.nodes.length !== 0 && <div>&#8964;</div>}
+                    {mainItem.childItems.nodes.length !== 0 && <div className="toggle-dropdown">&#8964;</div>}
                     </Link>
                     {mainItem.childItems.nodes.length !== 0 ? (
-                    <ul>
+                    <ul className="dropdown-menu">
                         {mainItem.childItems.nodes.map(childItem => (
-                        <li key={childItem.id}>
+                        <li key={childItem.id} className="dropdown-item">
                             <Link to={childItem.url} activeClassName="nav-active">
                             {childItem.label}
                             </Link>
@@ -37,4 +36,4 @@ const Navigation = ({ menu }) => {
     )
 }
 
-export default Navigation
+export default Nav

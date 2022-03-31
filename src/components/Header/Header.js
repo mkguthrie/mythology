@@ -1,18 +1,21 @@
 import React from "react";
-import Navigation from "../Navigation/Navigation";
+
+// components
+import Mobile from "./Mobile/Mobile";
 import { useMenuQuery } from "../../hooks/useMenuQuery";
 
 // styles
 import { Wrapper } from "./Header.styles";
 
 const Header = () => {
-    const { menu } = useMenuQuery()
-
-    // console.log(menu)
+    
+    const menuData = useMenuQuery()
 
     return (
         <Wrapper>
-            <Navigation menu={menu.menuItems.nodes} />
+           
+            <Mobile data={menuData} />
+           
         </Wrapper>
     )
 }
