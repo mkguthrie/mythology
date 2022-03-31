@@ -14,13 +14,12 @@ const Mobile = ({ data }) => {
 
     return (
         <Wrapper>
-            <div>
+            <div className="icon-wrap">
                 <Link to="/">
-                    <img src={Logo} alt={data.site.siteMetadata.title} />
+                    <img src={Logo} alt={data.site.siteMetadata.title} className="mobile-logo" />
                 </Link>
                 <button>X</button>
             </div>
-           
             <Nav menu={data.menu.menuItems.nodes} />
         </Wrapper>
     )

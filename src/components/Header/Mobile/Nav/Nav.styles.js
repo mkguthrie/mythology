@@ -8,6 +8,7 @@ export const Wrapper = styled.nav`
         text-align: center;
         list-style: none;
         padding: 0;
+        margin: 0;
     }
 
     ul.dropdown-menu {

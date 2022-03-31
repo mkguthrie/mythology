@@ -1,17 +1,20 @@
 import { Link } from "gatsby"
 import React from "react"
 import { Wrapper } from "./Nav.styles"
+import Logo from "../../../../images/MythologyLogo.png"
 
 
 
-const Nav = ({ menu }) => {
+const Nav = ({ data }) => {
 
-    // console.log(menu)
+    console.log(data)
     return (
         <Wrapper>
+            <Link to="/">
+                    <img src={Logo} alt={data.site.siteMetadata.title} className="mobile-logo" />
+            </Link>
             <ul>
-                <li className="nav-item buy-now">Buy Now</li>
-            {menu.map(mainItem =>
+            {data.menu.menuItems.nodes.map(mainItem =>
                 !mainItem.parentId ? (
                 <li key={mainItem.id} className="nav-item">
                     <Link to={mainItem.url} activeClassName="nav-active">
