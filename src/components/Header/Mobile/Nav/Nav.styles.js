@@ -1,6 +1,13 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.nav`
+    height: ${props => (props.menuOpen ? 'auto' : '0')};
+    opacity: ${props => (props.menuOpen ? '1' : '0')};
+    visibility: ${props => (props.menuOpen ? 'visible' : 'hidden')};
+    transform: ${props => props.menuOpen ? 'translateY(0%)' : 'translateY(-100%)'};
+    transition: all .25s ease;
+    overflow: hidden;
+       
 
     ul {
         display: flex;

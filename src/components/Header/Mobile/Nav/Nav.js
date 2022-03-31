@@ -4,11 +4,12 @@ import { Wrapper } from "./Nav.styles"
 
 
 
-const Nav = ({ menu }) => {
+const Nav = ({ menu, menuOpen }) => {
 
-    // console.log(menu)
+    
+    
     return (
-        <Wrapper>
+        <Wrapper menuOpen={menuOpen} >
             <ul>
                 <li className="nav-item buy-now">Buy Now</li>
             {menu.map(mainItem =>

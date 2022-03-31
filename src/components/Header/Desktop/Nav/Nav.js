@@ -7,7 +7,7 @@ import Logo from "../../../../images/MythologyLogo.png"
 
 const Nav = ({ data }) => {
 
-    console.log(data)
+    // console.log(data)
     return (
         <Wrapper>
             <Link to="/">

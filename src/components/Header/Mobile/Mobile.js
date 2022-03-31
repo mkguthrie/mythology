@@ -9,18 +9,26 @@ import Nav from "./Nav/Nav";
 import { Wrapper } from "./Mobile.styles";
 
 
-const Mobile = ({ data }) => {
-    // console.log(data);
+const Mobile = ({ data, menuOpen, callback }) => {
+    console.log(menuOpen);
+    // const [menuOpen, setMenuOpen] = useState(false)
+
+    // const handleOverlayMenu = () => setMenuOpen(prev => !prev)
+
+    
 
     return (
-        <Wrapper>
+        <Wrapper >
             <div className="icon-wrap">
                 <Link to="/">
                     <img src={Logo} alt={data.site.siteMetadata.title} className="mobile-logo" />
                 </Link>
-                <button>X</button>
+                <button 
+                className="closeButton"
+                onClick={callback}
+                >X</button>
             </div>
-            <Nav menu={data.menu.menuItems.nodes} />
+            <Nav menu={data.menu.menuItems.nodes} menuOpen={menuOpen} />
         </Wrapper>
     )
 }
