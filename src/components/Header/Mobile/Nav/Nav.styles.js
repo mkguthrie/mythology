@@ -7,6 +7,9 @@ export const Wrapper = styled.nav`
     transform: ${props => props.menuOpen ? 'translateY(0%)' : 'translateY(-100%)'};
     transition: all .25s ease;
     overflow: hidden;
+    position: absolute;
+    width: 100%;
+    background-color: #f1f6df;
        
 
     ul {

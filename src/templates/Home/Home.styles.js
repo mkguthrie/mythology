@@ -23,7 +23,6 @@ export const MobileHero = styled.div`
     background-color: #333a32;
     padding: 1em;
     margin-top: -80px;
-    z-index: 999;
     position: relative;
     
     @media screen and (min-width: 768px) {

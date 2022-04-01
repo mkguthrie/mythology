@@ -15,7 +15,6 @@ const Header = () => {
 
     const handleOverlayMenu = () => setMenuOpen(prev => !prev)
     
-
     return (
         <Wrapper>
             <Mobile data={menuData} menuOpen={menuOpen} callback={handleOverlayMenu} />
