@@ -14,4 +14,8 @@ export const GlobalStyles = createGlobalStyle`
             font-family: 'Libre Baskerville', serif;
         }
     }
+
+    body {
+        margin: 0;
+    }
 `;
